@@ -35,6 +35,4 @@ public class App
         Java8Parser parser = new Java8Parser(tokens);
         return parser.compilationUnit();
     }
-
-    static private Pa
 }
