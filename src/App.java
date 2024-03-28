@@ -1,12 +1,10 @@
 
-import i2.act.main.FuzzPEG;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.*;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.Random;
 
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
