@@ -13,7 +13,7 @@ public class NodeSelector extends Java8BaseListener {
     private int branchDepth = 0;
     private final int minHeight;
     private final int maxHeight;
-    ArrayList<ParserRuleContext> result = new ArrayList<ParserRuleContext>();
+    ArrayList<ParserRuleContext> result = new ArrayList<>();
 
     @Override
     public void enterEveryRule(ParserRuleContext var1) {

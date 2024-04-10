@@ -18,18 +18,22 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
       <groupId>org.antlr</groupId>
       <artifactId>antlr4-runtime</artifactId>
       <version>4.13.1</version>
     </dependency>
 
+      <dependency>
+          <groupId>ir.mohamad-khorsandi</groupId>
+          <artifactId>antlrv4_grammar_fuzzer</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-configuration2</artifactId>
+          <version>2.10.1</version>
+      </dependency>
   </dependencies>
     <build>
         <plugins>
