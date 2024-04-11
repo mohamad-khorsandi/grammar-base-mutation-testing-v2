@@ -1,3 +1,5 @@
+package mutation;
+
 import config.Config;
 import config.FuzzerConfig;
 import config.SelectorConfig;
@@ -8,9 +10,6 @@ import org.antlr.v4.runtime.*;
 import java.io.*;
 import static statics.staticObjects.log;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.yaml.snakeyaml.Yaml;
 import utils.RandUtil;
 import static statics.HelperMethods.getParsTree;
 
@@ -26,12 +25,6 @@ public class Mutation {
         this.config = config;
         parsTree = getParsTree(src);
         walker = new ParseTreeWalker();
-    }
-
-    public static void main(String[] args) throws IOException {
-        InputStream inputStream = new FileInputStream("config.yaml");
-        Config config = new Yaml().loadAs(inputStream, Config.class);
-        new Mutation(config, "src/main/resources/example_java").mutate();
     }
 
     public MutationResult mutate() throws IOException {

@@ -11,6 +11,7 @@ import parser.Java8Lexer;
 import parser.Java8Parser;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -53,10 +54,23 @@ public class HelperMethods {
         return printer.print(cu);
     }
 
-    public static void copyFile(String sourceFilePath, String destinationFilePath) throws IOException {
-        Path sourcePath = Paths.get(sourceFilePath);
+    public static void copyFile(InputStream sourceFilePath, String destinationFilePath) throws IOException {
         Path destinationPath = Paths.get(destinationFilePath);
-
-        Files.copy(sourcePath, destinationPath, StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(sourceFilePath, destinationPath, StandardCopyOption.REPLACE_EXISTING);
     }
+
+    public static void printUpTo(String input, int line, int column) {
+        String[] lines = input.split("\n");
+        if (line <= lines.length) {
+            String targetLine = lines[line - 1];
+            if (column <= targetLine.length()) {
+                System.out.println(targetLine.substring(0, column));
+            } else {
+                throw new RuntimeException("Column exceeds line length");
+            }
+        } else {
+            throw new RuntimeException("Line exceeds total lines in the string");
+        }
+    }
+
 }
