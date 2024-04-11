@@ -1,4 +1,4 @@
-// Generated from /home/mohammad/Desktop/st-proj/antlr_test/src/Java8.g4 by ANTLR 4.13.1
+// Generated from /home/mohammad/dev/mutation-testing/grammar-mutation-testing-v2/src/main/resources/Java8.g4 by ANTLR 4.13.1
 package parser;
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -24,18 +24,6 @@ public class Java8BaseListener implements Java8Listener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitLiteral(Java8Parser.LiteralContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterType(Java8Parser.TypeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitType(Java8Parser.TypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1625,13 +1613,13 @@ public class Java8BaseListener implements Java8Listener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEmptyStatement(Java8Parser.EmptyStatementContext ctx) { }
+	@Override public void enterEmptyStatement_(Java8Parser.EmptyStatement_Context ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEmptyStatement(Java8Parser.EmptyStatementContext ctx) { }
+	@Override public void exitEmptyStatement_(Java8Parser.EmptyStatement_Context ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

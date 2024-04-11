@@ -1,4 +1,4 @@
-// Generated from /home/mohammad/Desktop/st-proj/antlr_test/src/Java8.g4 by ANTLR 4.13.1
+// Generated from /home/mohammad/dev/mutation-testing/grammar-mutation-testing-v2/src/main/resources/Java8.g4 by ANTLR 4.13.1
 package parser;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -17,16 +17,6 @@ public interface Java8Listener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitLiteral(Java8Parser.LiteralContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link Java8Parser#type}.
-	 * @param ctx the parse tree
-	 */
-	void enterType(Java8Parser.TypeContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link Java8Parser#type}.
-	 * @param ctx the parse tree
-	 */
-	void exitType(Java8Parser.TypeContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link Java8Parser#primitiveType}.
 	 * @param ctx the parse tree
@@ -1348,15 +1338,15 @@ public interface Java8Listener extends ParseTreeListener {
 	 */
 	void exitStatementWithoutTrailingSubstatement(Java8Parser.StatementWithoutTrailingSubstatementContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link Java8Parser#emptyStatement}.
+	 * Enter a parse tree produced by {@link Java8Parser#emptyStatement_}.
 	 * @param ctx the parse tree
 	 */
-	void enterEmptyStatement(Java8Parser.EmptyStatementContext ctx);
+	void enterEmptyStatement_(Java8Parser.EmptyStatement_Context ctx);
 	/**
-	 * Exit a parse tree produced by {@link Java8Parser#emptyStatement}.
+	 * Exit a parse tree produced by {@link Java8Parser#emptyStatement_}.
 	 * @param ctx the parse tree
 	 */
-	void exitEmptyStatement(Java8Parser.EmptyStatementContext ctx);
+	void exitEmptyStatement_(Java8Parser.EmptyStatement_Context ctx);
 	/**
 	 * Enter a parse tree produced by {@link Java8Parser#labeledStatement}.
 	 * @param ctx the parse tree

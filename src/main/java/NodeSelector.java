@@ -19,7 +19,6 @@ public class NodeSelector extends Java8BaseListener {
     public void enterEveryRule(ParserRuleContext var1) {
         branchDepth = depth;
         depth++;
-
     }
 
     @Override

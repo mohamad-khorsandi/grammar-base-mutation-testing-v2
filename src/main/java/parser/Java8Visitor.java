@@ -1,4 +1,4 @@
-// Generated from /home/mohammad/Desktop/st-proj/antlr_test/src/Java8.g4 by ANTLR 4.13.1
+// Generated from /home/mohammad/dev/mutation-testing/grammar-mutation-testing-v2/src/main/resources/Java8.g4 by ANTLR 4.13.1
 package parser;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -16,12 +16,6 @@ public interface Java8Visitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitLiteral(Java8Parser.LiteralContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link Java8Parser#type}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitType(Java8Parser.TypeContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link Java8Parser#primitiveType}.
 	 * @param ctx the parse tree
@@ -815,11 +809,11 @@ public interface Java8Visitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitStatementWithoutTrailingSubstatement(Java8Parser.StatementWithoutTrailingSubstatementContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link Java8Parser#emptyStatement}.
+	 * Visit a parse tree produced by {@link Java8Parser#emptyStatement_}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitEmptyStatement(Java8Parser.EmptyStatementContext ctx);
+	T visitEmptyStatement_(Java8Parser.EmptyStatement_Context ctx);
 	/**
 	 * Visit a parse tree produced by {@link Java8Parser#labeledStatement}.
 	 * @param ctx the parse tree

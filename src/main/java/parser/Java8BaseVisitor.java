@@ -1,4 +1,4 @@
-// Generated from /home/mohammad/Desktop/st-proj/antlr_test/src/Java8.g4 by ANTLR 4.13.1
+// Generated from /home/mohammad/dev/mutation-testing/grammar-mutation-testing-v2/src/main/resources/Java8.g4 by ANTLR 4.13.1
 package parser;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
@@ -19,13 +19,6 @@ public class Java8BaseVisitor<T> extends AbstractParseTreeVisitor<T> implements 
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitLiteral(Java8Parser.LiteralContext ctx) { return visitChildren(ctx); }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
-	@Override public T visitType(Java8Parser.TypeContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -956,7 +949,7 @@ public class Java8BaseVisitor<T> extends AbstractParseTreeVisitor<T> implements 
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitEmptyStatement(Java8Parser.EmptyStatementContext ctx) { return visitChildren(ctx); }
+	@Override public T visitEmptyStatement_(Java8Parser.EmptyStatement_Context ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
